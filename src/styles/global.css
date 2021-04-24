@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button,
+input,
+textarea,
+textarea:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
