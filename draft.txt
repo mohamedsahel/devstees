@@ -1,0 +1,24 @@
+products source: Printful API
+authentication manager: Supabase
+database storage: Supabase
+
+
+authed user: purshase - orders history - settings ( default address )
+
+Structure:
+- core (store provider: auth - cart - product - customer - whishlist - checkout )
+- plugins (ex: chatbots - facebook pixel - google analytics - emails)
+- desing ( base ui - email captures - promobars -  )
+
+
+user --> action --> callbacks
+
+actions: [ VISIT_STORE - LOGIN - LOGOUT - VISITE-PRODUCT - ADD_TO_CART - REMOVE_FROM_CART - ADD_TO_WHISHLIST - REMOVE_FROM_WISHLIST - START-CHECKOUT - COMPLETE-CHECKOUT ]
+
+
+plugin: {
+  when: VISITE_STORE
+  run: () => {
+    facebook pixel stuff
+  }
+}
