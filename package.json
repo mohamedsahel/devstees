@@ -12,7 +12,7 @@
     "commit": "git add . && npx cz"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.11.9",
+    "@supabase/supabase-js": "^1.35.7",
     "axios": "^0.21.1",
     "daisyui": "^0.21.0",
     "next": "^10.1.3",
